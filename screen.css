@@ -1,4 +1,82 @@
-/* Add screen styles below */
-a.active {
-    font-weight: bold;
-}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #0b0c10;
+    color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  header {
+    background-color: #1f2833;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+  }
+  
+  nav a {
+    color: #66fcf1;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2rem;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  #status {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    flex-grow: 1;
+  }
+  
+  .experiment-status, .statistics {
+    background-color: #1f2833;
+    padding: 20px;
+    border-radius: 8px;
+    width: 45%;
+    max-height: 400px;
+    overflow-y: auto;
+  }
+  
+  .experiment-status h2, .statistics h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  .mission {
+    background-color: #282c34;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+  }
+  
+  .mission strong {
+    font-size: 1.2rem;
+  }
+  
+  footer {
+    background-color: #1f2833;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+  }
+  
+  footer p {
+    font-size: 1rem;
+  }   

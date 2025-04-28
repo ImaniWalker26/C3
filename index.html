@@ -1,19 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
-    <link rel="stylesheet" href="screen.css">
-  </head>
-  <body>
-    <h1>Home</h1>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fleet Status - Solar System Science Experiments</title>
+  <link rel="stylesheet" href="screen.css">
+  <script src="index.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Fleet Status: Science Experiments in the Solar System</h1>
     <nav>
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
+      <a href="#">Home</a>
     </nav>
-    <script src="index.js"></script>
-  </body>
+  </header>
+
+  <section id="status">
+    <div class="experiment-status">
+      <h2>Active Missions</h2>
+      <ul id="mission-list"></ul>
+    </div>
+
+    <div class="statistics">
+      <h2>Current Fleet Statistics</h2>
+      <p>Total Active Missions: <span id="active-missions">0</span></p>
+      <p>Total Data Collected: <span id="data-collected">0 GB</span></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Solar Fleet Inc. | Powered by Space Tech</p>
+  </footer>
+</body>
 </html>
